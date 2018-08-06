@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthService } from '../services/auth.service';
+import { MatButtonModule, MatCheckboxModule } from '@angular/material';
 import { Router } from '@angular/router';
 
 @Component({
@@ -10,16 +10,10 @@ import { Router } from '@angular/router';
 export class HomeComponent implements OnInit {
 
   constructor(
-    private authService: AuthService,
     private router: Router
   ) { }
 
   ngOnInit() {
   }
-
-  logoutUser() {
-    this.authService.logout();
-    this.router.navigate(['/login']);
-  }
-
+  
 }
