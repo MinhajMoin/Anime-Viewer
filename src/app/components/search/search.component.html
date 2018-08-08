@@ -1,0 +1,26 @@
+<!-- <mat-toolbar>
+    <div class="search">
+            <div class="search-box">
+                <mat-form-field id="matx">
+                <input id="searchBox" type="text" placeholder="Search Anime" [(ngModel)] = "ps" (input)="onSearchChange($event.target.value)">
+                </mat-form-field>
+            </div>
+            <div class="suggestionBox" *ngFor="let item of searchinfo; let i = index">
+                <div class="suggestions">{{item.title}}</div>
+            </div>
+        </div>            
+</mat-toolbar> -->
+<mat-toolbar>
+    <div>
+      <mat-form-field>
+        <input matInput id="sBox" type="text" [(placeholder)]="place" [(ngModel)] = "ps" (focus)="foc()" (focusout) = "nofoc()" (input)="onSearchChange()">
+      </mat-form-field>
+    </div>
+</mat-toolbar>
+  
+<div id = "sugg" *ngIf="place==null">
+<div class="suggestionBox" *ngFor="let item of searchinfo; let i = index" >
+        <div class="suggestions">{{item.title}}</div>
+</div>
+</div>
+<ta-videoplayer></ta-videoplayer>

@@ -11,12 +11,16 @@ import { MatButtonModule, MatCheckboxModule, MatInputModule } from '@angular/mat
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { VideoplayerComponent } from './components/videoplayer/videoplayer.component';
+import { EpisodelistComponent } from './components/episodelist/episodelist.component';
+import { SearchComponent } from './components/search/search.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     VideoplayerComponent,
+    EpisodelistComponent,
+    SearchComponent,
   ],
   imports: [
     BrowserModule,
