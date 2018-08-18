@@ -20,7 +20,14 @@
   
 <div id = "sugg" *ngIf="place==null">
 <div class="suggestionBox" *ngFor="let item of searchinfo; let i = index" >
-        <div class="suggestions">{{item.title}}</div>
+        <div class="suggestions" (click) = "func(i)"><span class="suggestimg"><img src="https://cdn.masterani.me/poster/1/{{item.poster.file}}"></span>
+        <div>{{item.title}}</div></div>
 </div>
 </div>
-<ta-videoplayer></ta-videoplayer>
+
+<div *ngIf="currentAnime!=null">{{currentAnime.title}}</div>
+<div class='container'>
+    <div id="video"><ta-videoplayer></ta-videoplayer></div>
+    <div id="episodes"><ta-episodelist></ta-episodelist></div>
+    <div id="clear"></div>
+</div>

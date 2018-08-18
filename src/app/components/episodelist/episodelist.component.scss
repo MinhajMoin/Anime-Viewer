@@ -1,0 +1,28 @@
+mat-list-item
+{
+  // position:absolute;
+  margin-top: 20px;
+  display: block;
+  width: 100%;
+  max-height: 40px;
+}
+.title
+{
+  float: left;
+}
+.episode
+{    
+  width: 100px;
+  float: left;
+}
+.entry
+{
+  margin-left: 30px;
+  padding: 20px;
+  background: red;
+  color: white;
+}
+
+.clear {
+    clear: both;
+}

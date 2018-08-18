@@ -1,3 +1,9 @@
-<p>
-  episodelist works!
-</p>
+<div class="EpisodeList">
+  <div class="list">
+  <div class="entry" *ngFor="let item of episodes; let i = index">
+      <span class="episode">Episode {{item.info.episode}}</span>
+      <span class="title">{{item.info.title}}</span>
+      <span class="clear"></span>
+  </div>
+</div>
+</div>

@@ -1,5 +1,5 @@
 mat-toolbar{
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -43,9 +43,50 @@ mat-form-field{
     width: 400px;
     
 }
+.suggestionBox
+{
+  // position:absolute;
+  margin-top: 2px;
+}
 input{
     color: white;
 }
 #sugg{
-    position: fixed;
+    position: absolute;
+    overflow: auto;
+}
+
+.suggestimg,img
+{
+  max-width:20px;
+  max-height: 60px;
+}
+ta-episodelist
+{
+  display:inline-block;
+  margin-left: 40px;
+  overflow-y: auto;
+  max-height: 500px;
+  width: 70%;
+}
+ta-videoplayer
+{
+  display:inline-block; 
+  z-index: -1;
+}
+#container {
+    margin: auto;
+    background: red;
+}
+#video {
+    float: left;
+    width: 50%;
+}
+#episodes {
+    float: left;
+    width: 40%;
+    margin-left: 20px;
+}
+#clear {
+    clear: both;
 }

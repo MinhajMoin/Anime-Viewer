@@ -3,16 +3,17 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { VideoplayerComponent } from './components/videoplayer/videoplayer.component';
 import { SearchComponent } from './components/search/search.component';
+import { EpisodelistComponent } from './components/episodelist/episodelist.component';
 
 const routes: Routes = [ {
   path: '',
   component: HomeComponent
 },{
   path: 'video',
-  component: VideoplayerComponent}
+  component: SearchComponent}
 ,{
   path: 'search',
-  component: SearchComponent
+  component: EpisodelistComponent
 },{
   path: '**',
   redirectTo: '',
