@@ -1,6 +1,6 @@
-# minhaj-animeviewer
+# Anime-Viewer
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.1.
+The Name is kinda misleading. This was actually an attempt at creating a very minimalist anime streaming site. Project currently on hiatus. Use Angular CLI for development. Pull Requests are welcome!
 
 ## Development server
 
